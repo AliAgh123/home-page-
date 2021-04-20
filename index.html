@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <title>Aid Net</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<body style="background-color: #0D2187;">
+    <div id="mobilephone">
+        <div class="menu" id="menubutton" style="position: fixed; margin-top: 7%; margin-left: 5%; background-color: black;border-radius: 50%; width: 50px;
+        height: 50px; z-index: 1; border: 2px solid white;">
+            <img src="photos/AidNetlogo.svg" style="height: 40px; margin-left: 3px; margin-top: 2px;">
+        </div>
+        <div id="menuphone" style="width: 35%; height: 105vh; background-color: white; border: 5px solid rgb(5, 5, 59); position: fixed; z-index: 1;transform: translateX(-200px);">
+            <p class="itemx"><a href="#">Services</a></p>
+            <p class="itemz">
+                <a href="#">Developers</a></p>
+            <p class="itemz">
+                <a href="#">Blog</a></p>
+            <p class="itemz">
+                <a href="#">Log In</a></p>
+            <p class="itemz">
+                <a href="#">Sign Up</a></p>
+            <p class="itemzx" id="close" style="margin-right: 50px;">
+                <a href="#"></a>close</p>
+        </div>
+        <script>
+            var close = document.getElementById("close");
+            var menubutton = document.getElementById("menubutton");
+            var menuphone = document.getElementById("menuphone");
+            menubutton.onclick = function() {
+                console.log("test")
+                menuphone.style.animationName = "menuphone";
+                menuphone.style.animationDuration = ".5s";
+                menuphone.style.animationIterationCount = "1";
+                menuphone.style.webkitAnimationTimingFunction = "ease";
+                menuphone.style.webkitAnimationFillMode = "forwards";
+
+            }
+
+            close.onclick = function() {
+                menuphone.style.animationName = "menuitemz";
+                menuphone.style.animationDuration = ".5s";
+                menuphone.style.animationIterationCount = "1";
+                menuphone.style.webkitAnimationTimingFunction = "ease";
+                menuphone.style.webkitAnimationFillMode = "forwards";
+            }
+        </script>
+    </div>
+
+    <div style="background-color: #0D2187; width: 100%; height: max-content; position: fixed; overflow: hidden; z-index: 1;">
+        <div id="testz" class="ui container" style="background-color: #0D2187; margin-right: 0%; border-radius: 0px; ">
+            <div id="testz" class="ui container" style="margin-top: 20px; ">
+                <div id="testz" class="ui inverted secondary  menu" style="background-color: #0D2187;">
+                    <a id="testz" class="ui  "><img src="photos/AidNetlogo.svg" style="height: 60px;"></a>
+                    <a class="ui item" style="border: none;">Services</a>
+                    <a class="ui item">Developers</a>
+                    <a class="ui item">Blog</a>
+                    <a class="ui right item">Log In</a>
+
+                    <a class="ui  item" id="testz"><button class="ui huge white active button" style=" color: #0D2187; height: 50px; width: 150px; background-color: white;" data-aos="fade-up"> Get Started</button></a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div id="my-container" class="ui grid middle aligned">
+        <div class="row">
+            <div class="column">
+                <div class="ui  container">
+                    <h1 class="ui left inverted huge header" style="font-size: 40px; margin-top: 20%;">
+                        <b>
+                        Connecting NGOs , <br> donners and the poor</b>
+                    </h1>
+                    <h2 class="ui inverted header">
+                        in a decentralized data base that provides<br> increased transparency and conversion
+                    </h2>
+                    <button class="ui  white huge active button" style="margin-top: 50px;color: #0D2187;background-color: white; height: 70px;width: 200px; ">Find NGO</button>
+                    <div class="ui secondary menu" style="margin-top: 50px;" id="testz">
+                        <a class="ui  right item"> <i class="comment inverted huge icon"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="ui placeholder segment " style="margin-top: 200px; border-radius: 0px;">
+
+        <div class="ui grid">
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+        </div>
+        <h1 class="ui centered header" data-aos="fade-up">Four serves one advanced platform</h1>
+        <h1 class="ui centered header " style="font-size: 20px; margin-top: -15px; " data-aos="fade-up" data-aos-duration="1000">unlike other non-profit organizations we provide a variety of services that will change the way you run your<br>organization,through a decentralized....</h1>
+        <div class="ui two column grid">
+            <div class="column">
+                <div class="segment" style="position: relative; border-radius: 0px;">
+                    <img src="photos/New Project.png" style="width: 100%;" data-aos="fade-right" data-aos-duration="1500">
+
+                    <h2 class="ui centered big header" data-aos="flip-left"> Reach out a wider audience <br>through <span style="color: #026dd8; text-decoration: underline;"><a href="#">public events</a></span></h2>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class=" segment" style="border-radius: 0px;">
+                    <img src="photos/rocket.png" style="width: 100%;" data-aos="fade-left" data-aos-duration="1500">
+
+                    <h2 class="ui centered big header" data-aos="flip-right" a>Grow up your organization, get linked with<br> donors and poor people</h2>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="ui two column grid">
+            <div class="column">
+                <div class="segment" style="position: relative; border-radius: 0px;">
+                    <img src="photos/clothet.png" style="width: 100%;" data-aos="fade-up" data-aos-duration="1500">
+
+                    <h2 class="ui centered big header" data-aos="flip-right" data-aos-duration="1500"> Our decentralized data base<br> prevents dual accounts and fights<br> couruption</h2>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class=" segment" style="border-radius: 0px;">
+                    <img src="photos/New Project (2).png" style="width: 100%;" data-aos="fade-up" data-aos-duration="1500">
+
+                    <h2 class="ui centered big header" data-aos="flip-left" data-aos-duration="1500">Have a cause your passionate about <br>start <span style="color: #026dd8; text-decoration: underline;"><a href="#"> fundraising</a></span></h2>
+
+                </div>
+            </div>
+
+        </div>
+        <img src="photos/bluebox.png" style="width: 70%;" data-aos="fade-up" data-aos-duration="1500">
+        <img src="photos/bluebox.png" style="width: 70%; margin-left: 30%;" data-aos="fade-up" data-aos-duration="1500">
+        <img src="photos/bluebox.png" style="width: 70%;" data-aos="fade-up" data-aos-duration="1500">
+        <img src="photos/bluebox.png" style="width: 70%; margin-left: 30%;" data-aos="fade-up" data-aos-duration="1500">
+    </div>
+    <div class="ui placeholder segment" style="background-color: #0D2187; border-radius: 0px;">
+        <h1 class="ui centered inverted huge header" data-aos="flip-down" data-aos-duration="1000">Are You An NGO?</h1><br><br><br><br>
+        <button class="ui huge   white  button" style="color: #0D2187; width: 250px; background-color: white;" data-aos="flip-left" data-aos-duration="1000">Start Now</button>
+    </div>
+    <div class="ui  placeholder segment" style="border-radius: 0px;">
+
+    </div>
+    <footer class="ui middle aligned centered grid container">
+        <header class="ui  inverted  header">Footer</header>
+    </footer>
+
+    <style>
+        #my-container {
+            width: 100%;
+            height: 75vh;
+        }
+        
+        @media only screen and (max-width: 590px) {
+            #testz {
+                display: none;
+            }
+        }
+        
+        @media only screen and (max-width: 590px) {
+            #testztwo {
+                display: none;
+                height: 0px;
+            }
+        }
+        
+        #getstarted {
+            visibility: hidden;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(15, 13, 34);
+            position: relative;
+            color: red;
+            transition: all .5s ease;
+        }
+        
+        .topnav #myLinks {
+            display: none;
+            transition: all .5s ease;
+        }
+        
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            transition: all .5s ease;
+        }
+        
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all .5s ease;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            transition: all .5s ease;
+        }
+        
+        .active {
+            background-color: #06145c;
+            border: 2px solid white;
+            color: white;
+            transition: all .5s ease;
+        }
+        
+        @media only screen and (min-width: 590px) {
+            .topnav {
+                visibility: hidden;
+                height: 0px;
+            }
+        }
+        
+        @media only screen and (min-width: 590px) {
+            #mobilephone {
+                visibility: hidden;
+            }
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes menuphone {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        
+        @keyframes menuitemz {
+            0% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(-200px);
+            }
+        }
+        
+        .itemx {
+            padding-top: 80%;
+            font-size: 20px;
+            margin-left: 20%;
+        }
+        
+        .itemz {
+            font-size: 20px;
+            padding-top: 30px;
+            margin-left: 20%;
+        }
+        
+        .itemzx {
+            font-size: 20px;
+            padding-top: 30px;
+            margin-left: 20%;
+        }
+    </style>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
