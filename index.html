@@ -1,97 +1,269 @@
- <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <link rel="stylesheet" href="css.css">
+<head>
+    <link rel="stylesheet" href="css.css">
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-        <meta name="viewport" content="width=device-width">
-        <title>Aid Net</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-    </head>
-
-    <body style="background-color: #0D2187;">
-        <div id="mobilephone">
-            <div class="menu" id="menubutton" style="position: fixed; margin-top: 7%; margin-left: 5%; background-color: black;border-radius: 50%; width: 50px;
-        height: 50px; z-index: 1; border: 2px solid white;">
-                <img src="photos/AidNetlogo.svg" style="height: 40px; margin-left: 3px; margin-top: 2px;">
-            </div>
-            <div id="menuphone" style="width: 35%; height: 105vh; background-color: white; border: 5px solid rgb(5, 5, 59); position: fixed; z-index: 1;transform: translateX(-200px);">
-                <p class="itemx"><a href="#">Services</a></p>
-                <p class="itemz">
-                    <a href="#">Developers</a></p>
-                <p class="itemz">
-                    <a href="#">Blog</a></p>
-                <p class="itemz">
-                    <a href="#">Log In</a></p>
-                <p class="itemz">
-                    <a href="#">Sign Up</a></p>
-                <p class="itemzx" id="close" style="margin-right: 50px;">
-                    <a href="#"></a>close</p>
-            </div>
-            <script>
-                var close = document.getElementById("close");
-                var menubutton = document.getElementById("menubutton");
-                var menuphone = document.getElementById("menuphone");
-                menubutton.onclick = function() {
-                    console.log("test")
-                    menuphone.style.animationName = "menuphone";
-                    menuphone.style.animationDuration = ".5s";
-                    menuphone.style.animationIterationCount = "1";
-                    menuphone.style.webkitAnimationTimingFunction = "ease";
-                    menuphone.style.webkitAnimationFillMode = "forwards";
-
-                }
-
-                close.onclick = function() {
-                    menuphone.style.animationName = "menuitemz";
-                    menuphone.style.animationDuration = ".5s";
-                    menuphone.style.animationIterationCount = "1";
-                    menuphone.style.webkitAnimationTimingFunction = "ease";
-                    menuphone.style.webkitAnimationFillMode = "forwards";
-                }
-            </script>
-        </div>
-
-        <div style="background-color: #0D2187; width: 100%; height: max-content; position: fixed; overflow: hidden; z-index: 1;" data-aos="fade-down" data-aos-duration="600">
-            <div id="testz" class="ui container" style="background-color: #0D2187; margin-right: 0%; border-radius: 0px; ">
-                <div id="testz" class="ui container" style="margin-top: 15px; ">
-                    <div id="testz" class="ui inverted secondary  menu" style="background-color: #0D2187;">
-                        <a id="testz" class="ui  "><img src="photos/AidNetlogo.svg" style="height: 60px;" data-aos="fade-down" data-aos-duration="1500"></a>
-                        <a class="ui item" style="border: none;">
-                            <p data-aos="fade-down" data-aos-duration="1200">Services</p>
-                        </a>
-                        <a class="ui item">
-                            <p data-aos="fade-down" data-aos-duration="1100">Developers</p>
-                        </a>
-                        <a class="ui item">
-                            <p data-aos="fade-down" data-aos-duration="1000">Blog</p>
-                        </a>
-                        <a class="ui right item">
-                            <p data-aos="fade-up" data-aos-duration="900">Log In</p>
-                        </a>
-                        <a class="ui  item" id="testz"> <button class="ui huge active inverted button" style="width: 150px; height: 50px; color: #0D2187;" data-aos="fade-up" data-aos-duration="1200"> Get Started </button></a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <title>Aid Net</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
+</head>
+
+<body style="background-color: #0D2187; ">
+    <div style="width: 100%;">
+        <header style="background-color: #0d2187; position: fixed; width: 100%; z-index: 1;" data-aos="fade-down" data-aos-duration="700">
+            <nav class="nav_bar navigation">
+                <div class="ui secondary menu" style="margin-top: 10px;">
+                    <div class="item">
+                        <img class="ui mini image" src="photos/AidNetlogo.svg" data-aos="fade-down" data-aos-duration="1300" />
                     </div>
-                </div>
-            </div>
-        </div>
+                    <a href="#" class="item" style="color: white" data-aos="fade-down" data-aos-duration="1400">
+						Home
+					</a>
+                    <a href="#" class="item" style="color: white" data-aos="fade-down" data-aos-duration="1300">
+						Contact
+					</a>
+                    <a href="#" class="item" style="color: white" data-aos="fade-down" data-aos-duration="1200">
+						About
+					</a>
+                    <div class="ui menu item" style="width: 75px">
+                        <div class="ui simple dropdown item">
+                            <a href="#" style="color: white" data-aos="fade-down" data-aos-duration="1200">
+								Aid
+							</a>
+                            <i class="dropdown icon" style="color: white; width: auto"></i>
+                            <div class="menu" style="background-color: #0d2187">
+                                <div class="item">
+                                    <a href="#" style="color: white">Fundraise</a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" style="color: white">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="right menu">
+                        <a href="#" class="ui item" href="#" style="color: white" data-aos="fade-up" data-aos-duration="1100">
+							Login
+						</a>
+                        <div class="item">
+                            <a href="#" class="ui button_get" data-aos="fade-up" data-aos-duration="1400">Get started</a
+							>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<nav class="nav_bar2 navigation">
+				<div class="ui secondary menu" style="margin-top: 10px;">
+					<div class="item">
+						<img class="ui mini image" src="photos/AidNetlogo.svg" />
+					</div>
+					<div class="item">
+						<a href="#" class="item menu_icon">
+							<button id="buttonz" class="button_bar" onclick="onez()">
+								<i class="bars icon"></i> Menu
+							</button></a
+						>
+                        <div id="menuz" style="width: 100px; height: 5000px ; background-color: black; color: white; position: fixed; right: 0; top: 0; transform: translateX(150px);">
+                            <header  style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
+        <header style="color: white; margin-top: 50px; margin-left: 35%; text-decoration: none;"><a href="#"> test</a></header>
         </div>
         </div>
-        <div id="my-container" class="ui grid middle aligned">
+        </div>
+        </nav>
+        </header>
+    </div>
+    <div class="ui inverted left fixed vertical menu vertical_menu" id="content" style="margin-top: 66px; transform: translateX(-250px)">
+        <ul style="list-style-type: none">
+            <div class="ui list">
+                <li><a href="#" class="item side_list"> Home </a></li>
+                <li><a href="#" class="item side_list"> About </a></li>
+                <li><a href="#" class="item side_list"> Contact </a></li>
+                <li>
+                    <div class="ui menu item">
+                        <div class="ui simple dropdown item">
+                            <div style="
+														color: white;
+														margin-left: 10px;
+														display: flex;
+														justify-content: flex-start;
+													">
+                                <a href="#" style="color: white"> Aid </a>
+                                <i class="dropdown icon"></i>
+                            </div>
+                            <div class="menu" style="background-color: #1b1c1d">
+                                <div class="item">
+                                    <a href="#" style="color: white">Fundraise</a>
+                                </div>
+                                <div class="item">
+                                    <a href="#" style="color: white">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    </div>
+
+    <!--<a href="#" class="item" style="color: white"> Services </a>
+					<a href="#" class="item" style="color: white"> Developers </a>
+					<a href="#" class="item" style="color: white"> Blog </a>-->
+
+    <div class="right menu">
+
+
+    </div>
+    </div>
+    </nav>
+    </header>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .button_get {
+            font-weight: bold;
+            color: #0028ff;
+            background-color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 15px 25px;
+        }
+        
+        .navigation {
+            margin: 0% 4.68% 0% 7.29%;
+        }
+        
+        .nav_bar2 {
+            visibility: hidden;
+            position: absolute;
+        }
+        
+        .button_bar {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            color: #0028ff;
+            background-color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 15px 25px;
+        }
+        
+        .vertical_menu {
+            width: 500px;
+        }
+        /* Tablet version */
+        
+        @media only screen and (min-width: 601px) and (max-width: 960px) {
+            header {
+                width: 960px;
+            }
+            /*.nav_bar {
+					display: flex;
+					align-items: center;
+				}*/
+        }
+        /* Mobile version */
+        
+        @media only screen and (max-width: 600px) {
+            .nav_bar {
+                visibility: hidden;
+                position: absolute;
+            }
+            .nav_bar2 {
+                visibility: visible;
+                position: static;
+            }
+            header {
+                width: 700px;
+            }
+            #button {
+                position: absolute;
+            }
+            .side_list {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        
+        @keyframes content {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        
+        @keyframes menuitemz {
+            0% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(-300px);
+            }
+        }
+    </style>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var button = document.getElementById("button");
+
+        button.onclick = function() {
+            var div = document.getElementById("content");
+            if (div.style.display !== "none") {
+                content.style.animationName = "content";
+                content.style.animationDuration = ".5s";
+                content.style.animationIterationCount = "1";
+                content.style.webkitAnimationTimingFunction = "ease";
+                content.style.webkitAnimationFillMode = "forwards";
+                div.style.display = "none";
+            } else {
+                console.log("test");
+                content.style.animationName = "content";
+                content.style.animationDuration = ".5s";
+                content.style.animationIterationCount = "1";
+                content.style.webkitAnimationTimingFunction = "ease";
+                content.style.webkitAnimationFillMode = "forwards";
+                div.style.display = "";
+            }
+        };
+    </script>
+    <div style="width: 100%; margin-right: -30%;">
+        <div id="my-container" class="ui grid middle aligned0 " style="width: 100%;">
             <div class="row">
                 <div class="column">
                     <div class="ui  container">
+                        <img id="testx" src="https://cdn.discordapp.com/attachments/831860168248524800/834119099923038208/25er_we7de.png" data-aos="zoom-in" data-aos-duration="1500" style="height: 350px; margin-top: -50px; float: right;" alt="">
                         <h1 class="ui left inverted huge header" style="font-size: 40px; margin-top: 20%;">
                             <b> <p data-aos="fade-up" data-aos-duration="800">
                         Connecting NGOs , <br > donners and the poor</b></p>
@@ -101,7 +273,7 @@
                             <p data-aos="fade-up" data-aos-duration="1500">
                                 in a decentralized data base that provides<br> increased transparency and conversion</p>
                         </h2>
-                        <button class="ui  white huge active button" style="margin-top: 50px;color: #0D2187;background-color: white; height: 70px;width: 200px; " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800"> Find NGO</button>
+                        <button class="ui  white huge active button" style="margin-top: 50px;color: #0D2187;background-color: white; height: 70px;width: 200px; " data-aos="zoom-in" data-aos-duration="1000"> Find NGO</button>
                         <div class="ui secondary menu" style="margin-top: 50px;" id="testz">
                             <a class="ui  right item"> <i class="comment inverted huge icon"></i></a>
 
@@ -110,203 +282,259 @@
                     </div>
                 </div>
 
+            </div>
 
 
+        </div>
+
+    </div>
+    <div class="ui placeholder segment " style="margin-top: 200px; border-radius: 0px; background-color: white;">
+
+        <div class="ui grid">
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+        </div>
+        <h1 class="ui centered header" data-aos="fade-up">Four serves one advanced platform</h1>
+        <h1 class="ui centered header " style="font-size: 20px; margin-top: -15px; " data-aos="fade-up" data-aos-duration="1000">unlike other non-profit organizations we provide a variety of services that will change the way you run your<br>organization,through a decentralized....</h1>
+        <div class="ui two column grid">
+            <div class="column">
+                <div class="segment" style="position: relative; border-radius: 0px;">
+                    <img src="photos/New Project.png" style="width: 100%;" data-aos="fade-right" data-aos-duration="1500">
+
+                    <h2 class="ui centered big header" data-aos="flip-left"> Reach out a wider audience <br>through <span style="color: #026dd8; text-decoration: underline;"><a href="#">public events</a></span></h2>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class=" segment" style="border-radius: 0px;">
+                    <img src="photos/rocket.png" style="width: 100%;" data-aos="fade-left" data-aos-duration="1500">
+
+                    <h2 class="ui centered big header" data-aos="flip-right" a>Grow up your organization, get linked with<br> donors and poor people</h2>
+
+                </div>
             </div>
 
         </div>
+        <div class="ui two column grid">
+            <div class="column">
+                <div class="segment" style="position: relative; border-radius: 0px;">
+                    <img src="photos/clothet.png" style="width: 100%;" data-aos="fade-up" data-aos-duration="1500">
 
-        </div>
-        <div class="ui placeholder segment " style="margin-top: 200px; border-radius: 0px;">
+                    <h2 class="ui centered big header" data-aos="flip-right" data-aos-duration="1500"> Our decentralized data base<br> prevents dual accounts and fights<br> couruption</h2>
 
-            <div class="ui grid">
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
-                <div class="four wide column"></div>
+                </div>
             </div>
-            <h1 class="ui centered header" data-aos="fade-up">Four serves one advanced platform</h1>
-            <h1 class="ui centered header " style="font-size: 20px; margin-top: -15px; " data-aos="fade-up" data-aos-duration="1000">unlike other non-profit organizations we provide a variety of services that will change the way you run your<br>organization,through a decentralized....</h1>
-            <div class="ui two column grid">
-                <div class="column">
-                    <div class="segment" style="position: relative; border-radius: 0px;">
-                        <img src="photos/New Project.png" style="width: 100%;" data-aos="fade-right" data-aos-duration="1500">
+            <div class="column">
+                <div class=" segment" style="border-radius: 0px;">
+                    <img src="photos/New Project (2).png" style="width: 100%;" data-aos="fade-up" data-aos-duration="1500">
 
-                        <h2 class="ui centered big header" data-aos="flip-left"> Reach out a wider audience <br>through <span style="color: #026dd8; text-decoration: underline;"><a href="#">public events</a></span></h2>
+                    <h2 class="ui centered big header" data-aos="flip-left" data-aos-duration="1500">Have a cause your passionate about <br>start <span style="color: #026dd8; text-decoration: underline;"><a href="#"> fundraising</a></span></h2>
 
-                    </div>
                 </div>
-                <div class="column">
-                    <div class=" segment" style="border-radius: 0px;">
-                        <img src="photos/rocket.png" style="width: 100%;" data-aos="fade-left" data-aos-duration="1500">
-
-                        <h2 class="ui centered big header" data-aos="flip-right" a>Grow up your organization, get linked with<br> donors and poor people</h2>
-
-                    </div>
-                </div>
-
             </div>
-            <div class="ui two column grid">
-                <div class="column">
-                    <div class="segment" style="position: relative; border-radius: 0px;">
-                        <img src="photos/clothet.png" style="width: 100%;" data-aos="fade-up" data-aos-duration="1500">
-
-                        <h2 class="ui centered big header" data-aos="flip-right" data-aos-duration="1500"> Our decentralized data base<br> prevents dual accounts and fights<br> couruption</h2>
-
-                    </div>
-                </div>
-                <div class="column">
-                    <div class=" segment" style="border-radius: 0px;">
-                        <img src="photos/New Project (2).png" style="width: 100%;" data-aos="fade-up" data-aos-duration="1500">
-
-                        <h2 class="ui centered big header" data-aos="flip-left" data-aos-duration="1500">Have a cause your passionate about <br>start <span style="color: #026dd8; text-decoration: underline;"><a href="#"> fundraising</a></span></h2>
-
-                    </div>
-                </div>
-
-            </div>
-            <img src="photos/bluebox.png" style="width: 70%;" data-aos="fade-up" data-aos-duration="1500">
-            <img src="photos/bluebox.png" style="width: 70%; margin-left: 30%;" data-aos="fade-up" data-aos-duration="1500">
-            <img src="photos/bluebox.png" style="width: 70%;" data-aos="fade-up" data-aos-duration="1500">
-            <img src="photos/bluebox.png" style="width: 70%; margin-left: 30%;" data-aos="fade-up" data-aos-duration="1500">
-        </div>
-        <div class="ui placeholder segment" style="background-color: #0D2187; border-radius: 0px;">
-            <h1 class="ui centered inverted huge header" data-aos="flip-down" data-aos-duration="1000">Are You An NGO?</h1><br><br><br><br>
-            <button class="ui huge   white  button" style="color: #0D2187; width: 250px; background-color: white;" data-aos="flip-left" data-aos-duration="1000">Start Now</button>
-        </div>
-        <div class="ui  placeholder segment" style="border-radius: 0px;">
 
         </div>
-        <footer class="ui middle aligned centered grid container">
-            <header class="ui  inverted  header">Footer</header>
-        </footer>
+        <img src="photos/bluebox.png" style="width: 70%;" data-aos="fade-up" data-aos-duration="1500">
+        <img src="photos/bluebox.png" style="width: 70%; margin-left: 30%;" data-aos="fade-up" data-aos-duration="1500">
+        <img src="photos/bluebox.png" style="width: 70%;" data-aos="fade-up" data-aos-duration="1500">
+        <img src="photos/bluebox.png" style="width: 70%; margin-left: 30%;" data-aos="fade-up" data-aos-duration="1500">
+    </div>
+    <div class="ui placeholder segment" style="background-color: #0D2187; border-radius: 0px;">
+        <h1 class="ui centered inverted huge header" data-aos="flip-down" data-aos-duration="1000">Are You An NGO?</h1><br><br><br><br>
+        <button class="ui huge   white  button" style="color: #0D2187; width: 250px; background-color: white;" data-aos="flip-left" data-aos-duration="1000">Start Now</button>
+    </div>
+    <div class="ui  placeholder segment" style="border-radius: 0px;">
 
-        <style>
-            #my-container {
-                width: 100%;
-                height: 80vh;
+    </div>
+    <footer class="ui middle aligned centered grid container">
+        <header class="ui  inverted  header">Footer</header>
+    </footer>
+
+    <style>
+        #my-container {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        @media only screen and (max-width: 590px) {
+            #testz {
+                display: none;
             }
-            
-            @media only screen and (max-width: 590px) {
-                #testz {
-                    display: none;
-                }
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            #testx {
+                display: none;
             }
-            
-            @media only screen and (max-width: 590px) {
-                #testztwo {
-                    display: none;
-                    height: 0px;
-                }
+        }
+        
+        @media only screen and (max-width: 590px) {
+            #testztwo {
+                display: none;
+                height: 0px;
             }
-            
-            #getstarted {
+        }
+        
+        #getstarted {
+            visibility: hidden;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(15, 13, 34);
+            position: relative;
+            color: red;
+            transition: all .5s ease;
+        }
+        
+        .topnav #myLinks {
+            display: none;
+            transition: all .5s ease;
+        }
+        
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+            transition: all .5s ease;
+        }
+        
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all .5s ease;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            transition: all .5s ease;
+        }
+        
+        .active {
+            background-color: #06145c;
+            border: 2px solid white;
+            color: white;
+            transition: all .5s ease;
+        }
+        
+        @media only screen and (min-width: 590px) {
+            .topnav {
+                visibility: hidden;
+                height: 0px;
+            }
+        }
+        
+        @media only screen and (min-width: 590px) {
+            #mobilephone {
                 visibility: hidden;
             }
-            
-            .topnav {
-                overflow: hidden;
-                background-color: rgb(15, 13, 34);
-                position: relative;
-                color: red;
-                transition: all .5s ease;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes menuphone {
+            0% {
+                transform: translateX(-200px);
             }
-            
-            .topnav #myLinks {
-                display: none;
-                transition: all .5s ease;
+            100% {
+                transform: translateX(0px);
             }
-            
-            .topnav a {
-                color: white;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-                display: block;
-                transition: all .5s ease;
+        }
+        
+        @keyframes menuitemz {
+            0% {
+                transform: translateX(0px);
             }
-            
-            .topnav a.icon {
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
-                transition: all .5s ease;
+            100% {
+                transform: translateX(-200px);
             }
-            
-            .topnav a:hover {
-                background-color: #ddd;
-                color: black;
-                transition: all .5s ease;
+        }
+        
+        .itemx {
+            padding-top: 80%;
+            font-size: 20px;
+            margin-left: 20%;
+        }
+        
+        .itemz {
+            font-size: 20px;
+            padding-top: 30px;
+            margin-left: 20%;
+        }
+        
+        .itemzx {
+            font-size: 20px;
+            padding-top: 30px;
+            margin-left: 20%;
+        }
+    </style>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <style>
+        a {
+            color: white;
+        }
+        
+        @keyframes menuzx {
+            0% {
+                transform: translateX(150px);
             }
-            
-            .active {
-                background-color: #06145c;
-                border: 2px solid white;
-                color: white;
-                transition: all .5s ease;
+            100% {
+                transform: translateX(0px);
             }
-            
-            @media only screen and (min-width: 590px) {
-                .topnav {
-                    visibility: hidden;
-                    height: 0px;
-                }
+        }
+        
+        @keyframes menuzxy {
+            0% {
+                transform: translateX(0px);
             }
-            
-            @media only screen and (min-width: 590px) {
-                #mobilephone {
-                    visibility: hidden;
-                }
+            100% {
+                transform: translateX(150px);
             }
-            
-            body {
-                font-family: 'Source Sans Pro', sans-serif;
-            }
-            
-            html {
-                scroll-behavior: smooth;
-            }
-            
-            @keyframes menuphone {
-                0% {
-                    transform: translateX(-200px);
-                }
-                100% {
-                    transform: translateX(0px);
-                }
-            }
-            
-            @keyframes menuitemz {
-                0% {
-                    transform: translateX(0px);
-                }
-                100% {
-                    transform: translateX(-200px);
-                }
-            }
-            
-            .itemx {
-                padding-top: 80%;
-                font-size: 20px;
-                margin-left: 20%;
-            }
-            
-            .itemz {
-                font-size: 20px;
-                padding-top: 30px;
-                margin-left: 20%;
-            }
-            
-            .itemzx {
-                font-size: 20px;
-                padding-top: 30px;
-                margin-left: 20%;
-            }
-        </style>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+        }
+    </style>
 
-    </html>
+    <script>
+        AOS.init();
+        var buttonz = document.getElementById("buttonz");
+        var menuz = document.getElementById("menuz");
+        var timesClicked = 0;
+
+
+
+        function onez() {
+            timesClicked++;
+
+            if (timesClicked > 1) {
+                menuz.style.animationName = "menuzxy";
+                menuz.style.animationDuration = ".5s";
+                menuz.style.animationIterationCount = "1";
+                menuz.style.webkitAnimationTimingFunction = "ease";
+                menuz.style.webkitAnimationFillMode = "forwards";
+
+                return a = 0;
+            } else {
+                menuz.style.animationName = "menuzx";
+                menuz.style.animationDuration = ".5s";
+                menuz.style.animationIterationCount = "1";
+                menuz.style.webkitAnimationTimingFunction = "ease";
+                menuz.style.webkitAnimationFillMode = "forwards";
+            }
+        }
+    </script>
+    </div>
+
+</body>
+
+</html>
